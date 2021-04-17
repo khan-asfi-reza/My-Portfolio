@@ -1,0 +1,89 @@
+
+
+
+@mixin screen4k{
+  @media screen and (min-width: 2160px){
+    @content
+  }
+}
+
+@mixin screen1080p{
+  @media screen and (max-width: 1920px){
+    @content
+  }
+}
+
+@mixin lg-screen{
+  @media screen and (max-width: 1600px){
+    @content
+  }
+}
+
+@mixin lg-laptop{
+  @media screen and (max-width: 1440px){
+    @content
+  }
+}
+
+
+
+@mixin md-laptop{
+  @media screen and (max-width: 1296px){
+    @content
+  }
+}
+
+@mixin laptop{
+  @media screen and (max-width: 1024px){
+    @content
+  }
+}
+
+@mixin sm-laptop{
+  @media screen and (max-width: 992px){
+    @content
+  }
+}
+
+@mixin pre-tab{
+  @media screen and (max-width: 878px){
+    @content
+  }
+}
+
+@mixin tablet{
+  @media screen and (max-width: 768px){
+    @content
+  }
+}
+
+
+@mixin lg-phone{
+  @media screen and (max-width: 625px){
+    @content
+  }
+}
+
+@mixin pre-phone{
+  @media screen and (max-width: 525px){
+    @content
+  }
+}
+
+@mixin phone{
+  @media screen and (max-width: 425px){
+    @content
+  }
+}
+
+@mixin md-phone{
+  @media screen and (max-width: 375px){
+    @content
+  }
+}
+
+@mixin sm-phone{
+  @media screen and (max-width: 320px){
+    @content
+  }
+}

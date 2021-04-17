@@ -1,0 +1,200 @@
+@import "../utils/media";
+
+
+
+.contact{
+  padding: 4% 0;
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%) ;
+  background-color: #40C565;
+  color: white;
+}
+
+.contact__animated .row__flex .row__flex__child:nth-child(1){
+  animation: fade-left 1s ease-in-out;
+}
+
+.contact__animated .row__flex .row__flex__child:nth-child(2){
+  animation: fade-right ease-in;
+}
+
+.contact .white-bg{
+  border-radius: 10px;
+}
+
+
+
+.contact-us .form-div {
+
+}
+
+.contact-us .form-div .body {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contact-us .form-div .body form {
+  padding: 5% 10%;
+}
+
+.contact-us .form-div .body form .form-heading {
+  text-align: center;
+  margin: 5% 0;
+
+}
+
+
+
+.form-div .body {
+
+}
+
+.form-div .body form {
+  padding: 5% 10%;
+}
+
+.form-div .body form .form-heading {
+  text-align: center;
+  margin: 5% 0;
+
+}
+
+.form-div .body form .form-input .label-name{
+  color: var(--theme-orange-color);
+}
+
+.form-div .body form .form-input {
+  position: relative;
+  overflow: hidden;
+  margin: 5% 0;
+}
+
+.form-div .body form .form-input .input {
+  border: none;
+  padding-top: 3rem;
+  width: 100%;
+  outline: none;
+  color: #959191;
+  font-size: 1.2rem;
+}
+
+.form-div .body form .form-input .input:focus + .label-name .content-name, .form-div .body form .form-input .input:valid + .label-name .content-name {
+  transform: translateY(-150%);
+}
+
+.form-div .body form .form-input .input:focus + .label-name::after, .form-div .body form .form-input .input:valid + .label-name::after {
+  transform: translateY(0);
+}
+
+.form-div .body form .form-input label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid var(--theme-orange-color);
+}
+
+.form-div .body form .form-input label::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 2px solid #37C151;
+  left: 0;
+  bottom: -1px;
+  transform: translate(-100%);
+  transition: transform 0.2s ease;
+}
+
+.form-div .body form .form-input label .content-name {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  transition: all 0.4s ease;
+}
+
+.form-div .body form .form-input textarea {
+  resize: none;
+}
+
+.form-div .body form .form-input textarea:focus + .label-name .content-name, .form-div .body form .form-input textarea:valid + .label-name .content-name {
+  transform: translateY(150%) !important;
+}
+
+.form-div .body form .form-input textarea::-webkit-scrollbar {
+  width: 3px;
+}
+
+.form-div .body form .form-input textarea::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 1px;
+}
+
+.form-div .body form .form-input textarea::-webkit-scrollbar-thumb {
+  background: #38c63d;
+  border-radius: 1px;
+}
+
+.form-div .body form .form-input textarea::-webkit-scrollbar-thumb:hover {
+  background: #0e0d0d;
+
+}
+.form-div .body form .button-container-1 {
+  margin: 30px 0 0 0;
+}
+.form-div .body form .button-container-1 button {
+  width: 5rem;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: var(--theme-orange-color);
+  color: var(--heading-color);
+  transition: all 0.5s;
+  border: 1px solid transparent;
+}
+.form-div .body form .button-container-1 button:hover {
+  background:  #d9d9d9;
+  color:  var(--theme-orange-color);
+  border: 1px solid  var(--theme-orange-color);
+}
+.form-div .body form .button-container-1 button:disabled {
+  pointer-events: none;
+}
+
+.form-div{
+  .body{
+    background: linear-gradient(135deg, #E59812, #FF016F);
+    border-radius: 20px;
+    padding: 2rem;
+    @include pre-phone{
+      padding: 1rem;
+    }
+    @extend .center-0;
+    .form{
+      background: rgb(255, 255, 255);
+      border-radius: 20px;
+      width: 100%;
+      &__container{
+        width: 90%;
+        margin: auto;
+        padding: 1rem 0;
+      }
+      h3{
+        color: var(--red-content-color);
+        font-size: 2rem;
+      }
+      form{
+        padding: 0;
+        color: var(--heading-color);
+      }
+    }
+  }
+}
+
+.form-input{
+  .input{
+    background: transparent;
+    border-bottom: 2px solid white;
+  }
+}

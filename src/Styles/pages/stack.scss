@@ -1,0 +1,54 @@
+@import "../utils/media";
+
+.expertise{
+  .container{
+    padding: 3rem 0 4rem;
+    .red-header{
+      margin-top: 1rem;
+    }
+    .project__box__text{
+      p{
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+  &__button{
+    color: var(--heading-color);
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: transparent;
+    border: var(--red-content-color) 2px solid;
+    transition: all 0.5s ease-in;
+  }
+  .active{
+    background-color: var(--red-content-color);
+    color: var(--heading-color);
+  }
+}
+
+.stack__grid{
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+
+.showcase{
+  margin-top: -110px;
+  .showcase__glass{
+
+    min-height: 23rem;
+    @include pre-phone{
+      min-height: 18rem;
+    }
+  }
+}
+
+@include pre-phone{
+  .project__number{
+    font-size: 1.2rem;
+  }
+  .mb_text_center{
+    text-align: center;
+  }
+}
